@@ -1,0 +1,93 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+.sprite {background-repeat: no-repeat; display: inline-block; }
+.sprite-icon-add {width: 86px; height: 86px; background-position: -5px -5px; }
+.sprite-icon-add-gray {width: 86px; height: 86px; background-position: -101px -5px; }
+.sprite-icon-add-gray-small {width: 30px; height: 30px; background-position: -197px -5px; }
+.sprite-icon-add-small {width: 30px; height: 30px; background-position: -237px -5px; }
+.sprite-icon-add-white {width: 86px; height: 86px; background-position: -277px -5px; }
+.sprite-icon-add-white-small {width: 30px; height: 30px; background-position: -373px -5px; }
+.sprite-icon-checkbox {width: 25px; height: 25px; background-position: -413px -5px; }
+.sprite-icon-checkbox-checked {width: 25px; height: 25px; background-position: -413px -40px; }
+.sprite-icon-choose {display: inline-block; vertical-align: text-bottom; width: 20px; height: 20px; background-position: -197px -75px; }
+.sprite-icon-delete {width: 20px; height: 18px; background-position: -227px -75px; }
+.sprite-icon-menu {width: 40px; height: 41px; background-position: -373px -75px; }
+.sprite-icon-modify-password {width: 86px; height: 86px; background-position: -5px -126px; }
+.sprite-icon-modify-password-small {width: 30px; height: 30px; background-position: -423px -75px; }
+.sprite-icon-order {width: 86px; height: 86px; background-position: -101px -115px; }
+.sprite-icon-order-gray {width: 86px; height: 86px; background-position: -197px -115px; }
+.sprite-icon-order-gray-small {width: 30px; height: 30px; background-position: -293px -115px; }
+.sprite-icon-order-small {width: 30px; height: 30px; background-position: -333px -115px; }
+.sprite-icon-order-white {width: 86px; height: 86px; background-position: -373px -126px; }
+.sprite-icon-order-white-small {width: 30px; height: 30px; background-position: -5px -222px; }
+.sprite-icon-query {width: 86px; height: 86px; background-position: -45px -222px; }
+.sprite-icon-query-gray {width: 86px; height: 86px; background-position: -141px -222px; }
+.sprite-icon-query-gray-small {width: 30px; height: 30px; background-position: -237px -222px; }
+.sprite-icon-query-small {width: 30px; height: 30px; background-position: -277px -222px; }
+.sprite-icon-query-white {width: 86px; height: 86px; background-position: -317px -222px; }
+.sprite-icon-query-white-small {width: 30px; height: 30px; background-position: -413px -222px; }
+.sprite-icon-radio {width: 20px; height: 20px; background-position: -5px -262px; }
+.sprite-icon-radio-checked {width: 20px; height: 20px; background-position: -237px -262px; }
+.sprite-icon-refund {width: 86px; height: 86px; background-position: -5px -318px; }
+.sprite-icon-refund-gray {width: 86px; height: 86px; background-position: -101px -318px; }
+.sprite-icon-refund-gray-small {width: 30px; height: 30px; background-position: -267px -262px; }
+.sprite-icon-refund-small {width: 30px; height: 30px; background-position: -413px -262px; }
+.sprite-icon-refund-white {width: 86px; height: 86px; background-position: -197px -318px; }
+.sprite-icon-refund-white-small {width: 30px; height: 30px; background-position: -413px -302px; }
+.sprite-icon-renew {width: 86px; height: 86px; background-position: -293px -318px; }
+.sprite-icon-renew-gray {width: 86px; height: 86px; background-position: -463px -5px; }
+.sprite-icon-renew-gray-small {width: 30px; height: 30px; background-position: -469px -101px; }
+.sprite-icon-renew-small {width: 30px; height: 30px; background-position: -509px -101px; }
+.sprite-icon-renew-white {width: 86px; height: 86px; background-position: -469px -141px; }
+.sprite-icon-renew-white-small {width: 30px; height: 30px; background-position: -453px -237px; }
+.sprite-icon-repair-gray {width: 86px; height: 86px; background-position: -453px -277px; }
+.sprite-icon-repair-gray-small {width: 30px; height: 30px; background-position: -493px -237px; }
+.sprite-icon-repair-white {width: 86px; height: 86px; background-position: -389px -373px; } 
+.sprite-icon-repair-white-small {width: 30px; height: 30px; background-position: -485px -373px; } 
+.sprite-logo {width: 162px; height: 55px; background-position: -5px -469px; }
+@media screen and (max-width: $iphone-6plus) {
+	.sprite-icon-add {width: 62px; height: 62px; background-position: -5px -5px; }
+	.sprite-icon-add-gray {width: 62px; height: 62px; background-position: -77px -5px; }
+	.sprite-icon-add-gray-small {width: 22px; height: 22px; background-position: -149px -5px; }
+	.sprite-icon-add-small {width: 22px; height: 22px; background-position: -181px -5px; }
+	.sprite-icon-add-white {width: 62px; height: 62px; background-position: -213px -5px; }
+	.sprite-icon-add-white-small {width: 22px; height: 22px; background-position: -285px -5px; }
+	.sprite-icon-checkbox {width: 19px; height: 19px; background-position: -317px -5px; }
+	.sprite-icon-checkbox-checked {width: 19px; height: 19px; background-position: -317px -34px; }
+	.sprite-icon-choose {display: inline-block; vertical-align: text-bottom;width: 15px; height: 15px; background-position: -149px -63px; }
+	.sprite-icon-delete {width: 20px; height: 18px; background-position: -174px -63px; }
+	.sprite-icon-menu {width: 30px; height: 31px; background-position: -285px -63px; }
+	.sprite-icon-modify-password {width: 62px; height: 62px; background-position: -5px -104px; }
+	.sprite-icon-modify-password-small {width: 22px; height: 22px; background-position: -325px -63px; }
+	.sprite-icon-order {width: 62px; height: 62px; background-position: -77px -95px; }
+	.sprite-icon-order-gray {width: 62px; height: 62px; background-position: -149px -95px; }
+	.sprite-icon-order-gray-small {width: 22px; height: 22px; background-position: -221px -95px; }
+	.sprite-icon-order-small {width: 22px; height: 22px; background-position: -253px -95px; }
+	.sprite-icon-order-white {width: 62px; height: 62px; background-position: -285px -104px; }
+	.sprite-icon-order-white-small {width: 22px; height: 22px; background-position: -5px -176px; }
+	.sprite-icon-query {width: 62px; height: 62px; background-position: -37px -176px; }
+	.sprite-icon-query-gray {width: 62px; height: 62px; background-position: -109px -176px; }
+	.sprite-icon-query-gray-small {width: 22px; height: 22px; background-position: -181px -176px; }
+	.sprite-icon-query-small {width: 22px; height: 22px; background-position: -213px -176px; }
+	.sprite-icon-query-white {width: 62px; height: 62px; background-position: -245px -176px; }
+	.sprite-icon-query-white-small {width: 22px; height: 22px; background-position: -317px -176px; }
+	.sprite-icon-radio {width: 15px; height: 15px; background-position: -5px -208px; }
+	.sprite-icon-radio-checked {width: 15px; height: 15px; background-position: -181px -208px; }
+	.sprite-icon-refund {width: 62px; height: 62px; background-position: -5px -248px; }
+	.sprite-icon-refund-gray {width: 62px; height: 62px; background-position: -77px -248px; }
+	.sprite-icon-refund-gray-small {width: 22px; height: 22px; background-position: -206px -208px; }
+	.sprite-icon-refund-small {width: 22px; height: 22px; background-position: -317px -208px; }
+	.sprite-icon-refund-white {width: 62px; height: 62px; background-position: -149px -248px; }
+	.sprite-icon-refund-white-small {width: 22px; height: 22px; background-position: -317px -240px; }
+	.sprite-icon-renew {width: 62px; height: 62px; background-position: -221px -248px; }
+	.sprite-icon-renew-gray {width: 62px; height: 62px; background-position: -357px -5px; }
+	.sprite-icon-renew-gray-small {width: 22px; height: 22px; background-position: -357px -77px; }
+	.sprite-icon-renew-small {width: 22px; height: 22px; background-position: -389px -77px; }
+	.sprite-icon-renew-white {width: 62px; height: 62px; background-position: -357px -109px; }
+	.sprite-icon-renew-white-small {width: 22px; height: 22px; background-position: -349px -181px; }
+	.sprite-icon-repair-gray {width: 62px; height: 62px; background-position: -349px -213px; }
+	.sprite-icon-repair-gray-small {width: 22px; height: 22px; background-position: -381px -181px; }
+	.sprite-icon-repair-white {width: 62px; height: 62px; background-position: -293px -285px; }
+	.sprite-icon-repair-white-small {width: 22px; height: 22px; background-position: -365px -285px; }
+	.sprite-logo {width: 118px; height: 40px; background-position: -5px -357px; }
+}

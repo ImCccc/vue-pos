@@ -1,0 +1,172 @@
+@import '../mixin.scss';
+
+.column-layout{
+	@include flex();
+	& > span:nth-child(1){
+		flex-shrink:0;
+	}
+	> div {
+		@include flex($grow: 1, $flex-wrap: wrap);
+		> div {
+			@include flex($grow: 1, $flex-wrap: wrap);
+			:nth-child(even) {
+				margin-right: .5rem;
+				flex-shrink:0;
+			}
+			:nth-child(odd) {
+				margin-right: .5rem;
+				flex-shrink:0;
+			}
+		}
+	}
+}
+
+
+.two-input{
+    @include flex($justify-content:space-between);
+	& > span:nth-child(1){
+		flex-shrink:0;
+	}
+	> div {
+		@include flex($justify-content: space-between, $grow: 1);
+		> input:nth-of-type(1){
+			width: 55%;
+		}
+		> input:nth-of-type(2){
+			width: 43%;
+		}
+	}
+}
+
+.one-input{
+    @include flex($justify-content:space-between);
+	& > span:nth-child(1){
+		flex-shrink:0;
+	}
+	> div {
+		@include flex($justify-content: space-between, $grow: 1);
+		> input:nth-of-type(1){
+			width: 30%;
+		}
+	}
+}
+
+.radio-warrp{
+    @include flex();
+	& > span:nth-child(1){
+		flex-shrink:0;
+	}
+	> div {
+		@include flex($grow: 1, $flex-wrap: wrap);
+		> span{
+		    margin-right: 1rem;
+			flex-shrink:0;
+			i{
+			    margin-right: .2rem;
+			}
+		}
+	}
+}
+
+.telephone{
+    @include flex($justify-content:space-between);
+	& > span:nth-child(1){
+		flex-shrink:0;
+	}
+	> div {
+		@include flex($justify-content: space-between, $grow: 1, $flex-wrap: wrap, $direction: column);
+		> div {
+			@include flex($justify-content: space-between, $grow: 1);
+			padding-bottom: .4rem;
+			> input:nth-of-type(1){
+				width: 10%;
+			}
+			> input:nth-of-type(2){
+				width: 25%;
+			}
+			> input:nth-of-type(3){
+				width: 25%;
+			}
+		}
+	}
+}
+
+.mobile-phone{
+	@include flex($justify-content:space-between);
+	& > span:nth-child(1){
+		flex-shrink:0;
+	}
+	> div {
+		@include flex($justify-content: space-between, $grow: 1, $flex-wrap: wrap, $direction: column);
+		> div {
+			padding-bottom: .4rem;
+			> input:nth-of-type(1){
+				margin-left: 1rem;
+				width: 10%;
+			}
+			> input:nth-of-type(2){
+				margin-left: 1rem;
+				width: 30%;
+			}
+		}
+	}
+}
+
+.address-row{
+	@include flex($justify-content:space-between);
+	& > span:nth-child(1){
+		flex-shrink:0;
+	}
+	> div {
+		@include flex($justify-content: space-between, $grow: 1, $flex-wrap: wrap, $direction: column);
+		> div {
+			@include flex($grow: 1);
+			padding: .2rem;
+			> select:nth-of-type(1){
+				width: 15%;
+				margin-right: 1rem;
+			}
+			> select:nth-of-type(2){
+				width: 20%;
+			}
+			> input:nth-of-type(1){
+				width: 30%;
+				margin-right: 1rem;
+			}
+			> input:nth-of-type(2){
+				width: 40%;
+			}
+		}
+	}
+}
+
+.address-col{
+	@include flex($justify-content:space-between);
+	& > span:nth-child(1){
+		flex-shrink:0;
+	}
+	> div {
+		@include flex($justify-content: space-between, $grow: 1);
+		:nth-child(odd),:nth-child(even){
+			margin-right: .2rem;
+		}
+		:last-child{
+			margin-right: 0rem;
+		}
+		> select:nth-of-type(1){
+			flex-shrink:0;
+			width: 13%;
+		}
+		> select:nth-of-type(2){
+			flex-shrink:0;
+			width: 15%;
+		}
+		> input:nth-of-type(1){
+			flex-grow: 1;
+		}
+		> input:nth-of-type(2){
+			flex-shrink:0;
+			width: 22%;
+		}
+	}
+}

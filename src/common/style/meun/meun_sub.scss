@@ -1,0 +1,57 @@
+@import '../variable.scss';
+@import '../mixin.scss';
+.content-section{
+	@include flex($direction: column, $grow: 1);
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+	.menuButList-warp{
+		@include flex($direction: column, $grow: 1);
+		overflow: auto;
+		.menuButList{
+			@include flex($direction: column, $grow: 0.8, $align-items: center, $justify-content: center, $shrink: 0);
+			@include media((flex-grow: 0.5));
+			overflow: auto;
+		}
+		.but-column{
+			@include flex($justify-content: center, $shrink: 0);
+			.but-warp{
+				margin: 1rem;
+				width: 11.2rem;
+				height: 6.5rem;
+				overflow: hidden;
+				.main-but{
+					position: relative;
+					width: 100%;
+					height: 100%;
+					overflow: hidden ;
+					background-color: $btn-bgc-subBut;
+					border-radius: 0.6rem;
+					i{
+						display: block ;
+						width: 100%;
+						width: 4.4rem;
+						margin: 0.8rem;
+					}
+					.subMenu-font-style {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						width: 100%;
+						text-align: center;
+						transform: translate(-50%,-50%);
+						color: $white;
+						font-size: $font-meun;
+					}
+					&.gray{
+						background-color: $btn-no-click-bgc;
+					}
+					&.transparent{
+						background-color: $transparent;
+					}
+				}
+			}
+		}
+	}
+}

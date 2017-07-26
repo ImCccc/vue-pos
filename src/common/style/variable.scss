@@ -1,0 +1,74 @@
+// 背景
+	$body-bgc: #e6e7e7;
+	$div-bgc: #959595;
+	$list-bgc: #CCCCCC;
+	$text-bgc: #a1a1a1;
+	$white: #fff;
+	$red:#e6003e;
+	$transparent: rgba(0, 0,0, 0);
+
+// input 相关
+	$input-bgc: #626262;
+	$input-readonly: #c0c0c0;
+	$input-color:#626262;
+	$input-height: 1.5rem;
+	$input-padding: 0 0 0 0.2rem;
+	$input-border: 1px solid #959595;
+
+// select 相关
+	$select-disabled-bgc:#c0c0c0;
+	$select-background-size: 1rem;
+	$select-border: 1px solid #959595;
+	$select-height: 1.5rem;
+	$select-font-size: 1rem;
+	$select-color: #626262;
+	$select-padding: 0 1rem 0 0;
+    $select-background: url(../images/select-bg.png) no-repeat right;
+
+
+// 连接下划线
+	$link-color: #0068b7;
+
+
+// 按钮背景
+	$btn-no-click-bgc: #bfbfbf;
+	$btn-bgc-footer: #004889;
+	$btn-bgc-common: gray;
+	$btn-bgc-subBut: rgb(14, 65, 121);
+
+// 字体相关
+	// 颜色
+	$font-color-blue: #002f5f;
+	$font-color-common: #626262;
+	$font-color-red: #e6003e;
+	$font-color-gray: #3c3c3c;
+	// 大小
+	$font-large: 2rem;
+	$font-title: 1.5rem;
+	$font-text: 1rem;
+	$font-small: 0.7rem;
+	$font-meun: 1.8rem;
+
+// 公共邊框
+	$border: 1px solid #959595;
+
+// 分辨率
+	$ipad:1024px;
+	$iphone-6plus:736px;
+	$iphone-6:667px;
+
+//全局字体大小
+	$foun-size-ipad: 20px;
+	$foun-size-i6: 13px;
+	$foun-size-i6p: 14px;
+
+// 图片名称
+	$sprite-img-ipad: 'spritesheet-ipad.png';
+	$sprite-img-iphone: 'spritesheet-iphone.png';
+
+
+// z-index 
+	$common-z-index: 1;
+	$mainMenu-z-index: $common-z-index + 2;
+	$moveBox-z-index: $mainMenu-z-index + 2;
+	$loading-z-index: $moveBox-z-index + 2;

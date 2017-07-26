@@ -1,0 +1,60 @@
+@import 'variable.scss';
+@mixin title() {
+	font-size: $font-title;
+   	color: $font-color-common;
+   	font-weight: bold;
+}
+@mixin largeTitle() {
+	font-size: $font-large;
+   	color: $font-color-common;
+   	font-weight: bold;
+}
+@mixin flex($direction:initial, $grow:initial, $shrink:1, $justify-content: initial, $align-items:initial, $flex-wrap:nowrap) {
+	display: flex;
+	flex-direction: $direction;
+	flex-grow: $grow;
+	flex-shrink: $shrink;
+	justify-content: $justify-content;
+	align-items: $align-items;
+	flex-wrap: $flex-wrap;
+}
+@mixin font($size: $font-text, $weight: initial, $color:$font-color-common) {
+	font-size: $size;
+	font-weight: $weight;
+	color: $color;
+}
+
+
+// 关于媒体查询的
+@mixin radio($route: '../images') {
+	background-image: url(#{$route}/#{$sprite-img-ipad});
+	width: 20px;
+	height: 20px;
+	background-position: -5px -262px;
+	@media screen and (max-width: $iphone-6plus + 1) { 
+		background-image: url(#{$route}/#{$sprite-img-iphone});
+		width: 15px;
+		height: 15px;
+		background-position:-5px -208px;
+	}
+}
+@mixin radioChoose() {
+	background-position: -237px -262px;
+	@media screen and (max-width: $iphone-6plus + 1) { 
+		background-position:-181px -208px;
+	}
+}
+@mixin spriteBackgroundImage($route) {
+	background-image: url(#{$route}/#{$sprite-img-ipad});
+	@media screen and (max-width: $iphone-6plus + 1) { 
+		background-image: url(#{$route}/#{$sprite-img-iphone});
+	}
+}
+
+@mixin media($map, $screen: 736px) {
+	@media screen and (max-width: $screen + 1) { 
+		@each $style,$val in $map {
+			#{$style}: $val;
+		}
+	}
+}

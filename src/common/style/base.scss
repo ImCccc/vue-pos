@@ -1,0 +1,108 @@
+@import 'variable';
+@import 'mixin';
+$width-Percentage: 100;
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+html {
+	font-family: Helvetica, "ARHeiB5", "文鼎黑體", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif; 
+	color: $font-color-common;
+	font-size: $foun-size-ipad;
+	@include media((font-size: $foun-size-i6p));
+	@include media((font-size:$foun-size-i6), $iphone-6);
+}
+
+input{
+	color: $input-color;
+	height: $input-height;
+	padding: $input-padding;
+	border: $input-border;
+}
+input[readonly]{
+	background-color: $input-readonly;
+}
+// 当 type = number , 将上下箭头去掉的样式
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+
+select{
+    -webkit-appearance: none;
+    background: $select-background;
+    background-size: $select-background-size;
+    border: $select-border;
+    height: $select-height;
+    font-size: $select-font-size;
+    color: $select-color;
+    padding: $select-padding;
+}
+select[disabled]{
+	background-color: $select-disabled-bgc;
+}
+
+i[checkbox]{
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 1rem;
+	height: 1rem;
+    border: $border;
+}
+i[checkbox].noedit{
+	background-color:#DEDCDC;
+}
+i[checkbox].choose{
+	background-image:url(../images/icon-choose.png);
+	background-size: 100% 100%;
+}
+
+i[radio]{
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: -0.15rem;
+	@include radio();
+}
+i[radio].choose{
+	@include radioChoose();
+}
+i[radio].noedit{
+	background-color: gainsboro;
+	border-radius: 50%;
+}
+
+.flex{display: flex; }
+.flex-column{display: flex; flex-direction: column; }
+.justify-space-between{justify-content: space-between; }
+.align-items-center{align-items: center; }
+.flex-grow-0{flex-grow:0; }
+.flex-grow-1{flex-grow:1; }
+.flex-grow-2{flex-grow:2; }
+.flex-shrink{flex-shrink : 0; }
+
+.none{display: none; }
+.block {display: block; }
+.inline-block{display: inline-block; }
+
+.absolute{position: absolute; }
+.relative{position: relative; }
+.fixed{position: fixed; }
+
+.text-align-right{text-align:right; }
+.text-align-left{text-align:left; }
+.text-align-center{text-align: center; }
+
+.float-left {float: left; }
+.float-right {float: right; }
+
+/* 
+	@for $i from <start> through <end>	
+	@for $i from <start> to <end> 
+	区别是关键字 through 表示包括 end 这个数，而 to 则不包括 end 这个数
+*/
+@for $i from 1 through $width-Percentage {
+	.ui-w-#{$i} {
+		width: percentage($i / $width-Percentage);
+	}
+}

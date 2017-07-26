@@ -1,0 +1,123 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+// 版本号样式
+.common-version{
+    position: absolute;
+    top: 2.6rem;
+    right: 1rem;
+    z-index: $common-z-index;
+}
+// 清除浮动
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+// 上下拉动滚动条时卡顿、慢
+.commom-overflow-scrolling{
+    -webkit-overflow-scrolling:touch;
+    overflow-scrolling: touch;
+}
+// 连接下划线
+.link{
+    border-bottom: 1px solid $link-color;
+    color: $link-color;
+}
+// 列表背景灰白交替
+.common-alt-bg >div:nth-of-type(odd){
+    background-color: $list-bgc;                
+}
+.common-alt-bg >div:nth-of-type(even){
+    background-color: $white;                
+}
+// 列表背景白灰交替
+.common-alt-bg2 >div:nth-of-type(odd){
+    background-color: $white;                
+}
+.common-alt-bg2 >div:nth-of-type(even){
+    background-color: $list-bgc;                
+}
+// 白色背景
+.background-color-white{
+    background-color: $white;
+}
+.common-margin-top{
+    margin-top: .4rem;
+}
+.common-padding{
+    padding:.8rem;
+}
+// 两边布局
+.common-list-layout{
+    @include flex($justify-content: space-between, $align-items: center);
+}
+// 居中布局
+.common-list-center{
+    @include flex($justify-content: center, $align-items: center);
+}
+
+// 蓝色加粗字体
+.font-blue-bold{
+	color: $font-color-blue;
+	font-weight: bold;
+	font-size: $font-text;
+}
+// 蓝色字体
+.font-blue{
+    color: $font-color-blue;
+    font-size: $font-text;
+}
+// 普通字体
+.font-text{
+    font-size: $font-text;
+    color: $font-color-common;
+    font-weight: initial;
+}
+
+// 按钮最外层样式
+.btn-warrp{
+    width: 100%;
+    padding: .5rem;
+    @include flex($justify-content: space-around);
+}
+// 按钮样式
+.dry-button{
+	display: inline-block;
+    padding: .3rem 1rem;
+    background-color: gray;
+    color: $white;
+    border-radius: 10%;
+}
+.main-section{
+    width: 96%;
+    margin: 0 auto;
+    @include flex($direction: column, $grow: 1);
+    .content-section{
+        flex-grow:1;
+    }
+}
+// 头部样式
+.section-header{
+    @include flex($justify-content:space-between, $shrink:0);
+    background-color: $white;
+    padding: .8rem;
+}
+// 130 的样式
+.num130{
+    position: absolute;
+    margin-left: -2rem;
+    margin-top: .2rem;
+    color: gray;
+}
+// * 的样式
+.star{
+    position: absolute;
+    z-index: $common-z-index;
+    margin-left: -.7rem;
+    margin-top: .2rem;
+} 
+.radio-absolute {
+    position: absolute;
+    margin-left: -1.2rem;
+    margin-top: .18rem;
+}
